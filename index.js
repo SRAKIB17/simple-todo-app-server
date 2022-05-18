@@ -48,7 +48,7 @@ const run = async () =>{
             
             const result = await todoAppCollection.updateOne(query, doc, option);
             res.send(result)
-        })
+        }) 
 
         app.delete('/note/:id', async(req, res)=>{
             const id = req.params.id;
