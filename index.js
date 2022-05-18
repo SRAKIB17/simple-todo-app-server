@@ -29,7 +29,7 @@ const run = async () =>{
             const result = await todoAppCollection.find({email: email}).toArray()
 
             res.send(result)
-        })
+        }) 
 
         app.post('/note', async(req, res)=>{
             const note = req.body;
