@@ -65,4 +65,4 @@ const run = async () =>{
 run().catch(console.dir)
 app.listen(port, ()=>{
     console.log('running successfully')
-})
+}) 
