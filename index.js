@@ -41,7 +41,7 @@ const run = async () =>{
         app.put('/note/:id', async(req, res)=>{
             const id = req.params.id;
             const doc = {
-                $set: req.body
+                $set: req.body 
             }
             const option = {upsert: true}
             const query = {_id: ObjectId(id)}
