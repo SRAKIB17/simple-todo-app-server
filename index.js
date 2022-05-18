@@ -43,9 +43,10 @@ const run = async () =>{
             const doc = {
                 $set: req.body
             }
+            const option = {upsert: true}
             const query = {_id: ObjectId(id)}
             
-            const result = await todoAppCollection.updateOne(query, doc);
+            const result = await todoAppCollection.updateOne(query, doc, option);
             res.send(result)
         })
 
