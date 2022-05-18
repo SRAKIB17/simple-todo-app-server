@@ -37,6 +37,7 @@ const run = async () =>{
             const result = await todoAppCollection.insertOne(note);
             res.send(result)
         })
+        // ok
         
         app.put('/note/:id', async(req, res)=>{
             const id = req.params.id;
